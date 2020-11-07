@@ -62,7 +62,7 @@ metadata.create_all(enginee)
 -   `CheckConstraint`: Import `sqlalchemy.CheckConstraint`
 -   `Index`: Import `sqlalchemy.Index`
 
-**PrimaryKeyConstraint**
+**ForeignKeyConstraint**
 
 ```python
 parent = Table('foo', metadata,
@@ -81,7 +81,7 @@ child = Table('bar', metadata,
 **UniqueConstraint**
 
 ```python
-parent = Table('foo', metadata,
+foo = Table('foo', metadata,
     Column('foo1', Integer, primary_key=True),
     Column('foo2', Integer, nullable=False),
     Column('foo4', String(16), nullable=False),
@@ -92,7 +92,7 @@ parent = Table('foo', metadata,
 **CheckConstraint**
 
 ```python
-employee = Table('foo', metadata,
+foo = Table('foo', metadata,
     Column('id', Integer(), primary_key=True),
     Column('bar1', String(100), nullable=False),
     Column('bar2', Integer(), nullable=False),
