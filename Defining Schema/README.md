@@ -30,3 +30,4 @@ foo_table = Table('foo_table', metadata,
 -   `Unique`: Needs to be unique(Boolean)?
 -   `index`: Need table to be indexed by the column ? (Boolean)
 -   `autoincreament`: Auto increament value: (Boolean)
+-   `onupdate`: What to do on update? (Callable/function/method)
