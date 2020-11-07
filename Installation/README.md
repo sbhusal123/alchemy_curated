@@ -24,6 +24,6 @@
 
 -   **Syntax for enginee string:** `dialect+driver://username:password@host:port/database`
 
--   Dialect refers to the database we're using. Example `mysql, postgres, oracle, ...`. Default one is used if not specified assuming it's installed.
+-   Dialect refers to the database we're using. Example `mysql, postgres, oracle, ...`.
 
--   Driver refers to dbapi. Example `psycopg2, python-mysql, ...`
+-   Driver refers to dbapi. Example `psycopg2, python-mysql, ...` Default one is used if not specified assuming it's installed.
